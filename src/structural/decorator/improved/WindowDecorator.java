@@ -1,7 +1,9 @@
 package structural.decorator.improved;
 
-
-public class WindowDecorator extends Window{
+/**
+ * A Decorator can decorate both a Decorator or a window to achieve Daisy chain of multiple decorators.
+ */
+public class WindowDecorator extends Window {
 
     protected Window window;
 

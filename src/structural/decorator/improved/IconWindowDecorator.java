@@ -1,7 +1,7 @@
 package structural.decorator.improved;
 
 
-public class IconWindowDecorator extends WindowDecorator{
+public class IconWindowDecorator extends WindowDecorator {
 
     public IconWindowDecorator(Window window) {
         super(window);
