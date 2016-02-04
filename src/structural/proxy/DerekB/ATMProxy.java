@@ -4,13 +4,11 @@ package structural.proxy.DerekB;
 // an ATMMachine Object
 
 public class ATMProxy implements GetATMData {
-
+    ATMMachine realATMMachine = new ATMMachine();
     // Allows the user to access getATMState in the
     // Object ATMMachine
 
     public ATMState getATMState() {
-
-        ATMMachine realATMMachine = new ATMMachine();
 
         return realATMMachine.getATMState();
     }
@@ -19,8 +17,6 @@ public class ATMProxy implements GetATMData {
     // in the Object ATMMachine
 
     public int getCashInMachine() {
-
-        ATMMachine realATMMachine = new ATMMachine();
 
         return realATMMachine.getCashInMachine();
 
