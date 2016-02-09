@@ -2,6 +2,7 @@ package creational.singleton.example.improved;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * This is an evil emperor family. Only 5 emperors may exist
