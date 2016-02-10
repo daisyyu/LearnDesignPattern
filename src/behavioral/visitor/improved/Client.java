@@ -26,6 +26,7 @@ public class Client {
         car.upgrade();;
         car.print();
         car.render();
+        car.daisy();
         
         
     }

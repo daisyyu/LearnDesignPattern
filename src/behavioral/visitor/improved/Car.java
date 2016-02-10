@@ -16,24 +16,34 @@ public class Car {
         this.carParts = carParts;
     }
 
-    public void render(){
-        RenderCarPartVisitor renderer = new RenderCarPartVisitor();
+    CarPartVisitor renderer = new RenderCarPartVisitor();
+    CarPartVisitor printer = new PrintCarPartVisitor();
+    CarPartVisitor upgrader = new UpgradeCarPartVisitor();
+    CarPartVisitor daisy = new DaisyCarPartVisitor();
+
+
+    public void render() {
         for (CarPart carPart : carParts) {
             carPart.acceptCarPartVisitor(renderer);
         }
     }
 
-    public void print(){
-        PrintCarPartVisitor visitor = new PrintCarPartVisitor();
+    public void print() {
+
         for (CarPart carPart : carParts) {
-            carPart.acceptCarPartVisitor(visitor);
+            carPart.acceptCarPartVisitor(printer);
         }
     }
 
-    public void upgrade(){
-        UpgradeCarPartVisitor visitor = new UpgradeCarPartVisitor();
+    public void upgrade() {
         for (CarPart carPart : carParts) {
-            carPart.acceptCarPartVisitor(visitor);
+            carPart.acceptCarPartVisitor(upgrader);
+        }
+    }
+
+    public void daisy() {
+        for (CarPart carPart : carParts) {
+            carPart.acceptCarPartVisitor(daisy);
         }
     }
 
