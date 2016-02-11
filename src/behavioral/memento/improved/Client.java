@@ -14,6 +14,7 @@ public class Client {
         connectionSolver.setSecondPoint(new Point2D.Double(5.0, 1.0));
 
         caretaker.saveState(connectionSolver);
+//        ConnectionSolverMemento c = new ConnectionSolverMemento(new Point2D.Double(1.0,1.0),new Point2D.Double(1.0,1.0));
 
 
 
@@ -36,6 +37,22 @@ public class Client {
 
         caretaker.restoreState(connectionSolver);
 
+        connectionSolver.calculateLine();
+
+
+        System.out.println("=============Trying out Daisy's implementation=============");
+        connectionSolver.move();
+        connectionSolver.calculateLine();
+        connectionSolver.move();
+        connectionSolver.calculateLine();
+        connectionSolver.move();
+        connectionSolver.calculateLine();
+
+        connectionSolver.undoMove();
+        connectionSolver.calculateLine();
+        connectionSolver.undoMove();
+        connectionSolver.calculateLine();
+        connectionSolver.undoMove();
         connectionSolver.calculateLine();
 
     }
