@@ -1,6 +1,8 @@
 package behavioral.observer;
 
-
+/**
+ * Not possible to reuse Button, it is staticly binded with InputText and List
+ */
 public class Button {
 
     private InputText inputText;
@@ -8,7 +10,7 @@ public class Button {
     private List list;
 
 
-    public void clicked(){
+    public void clicked() {
 
         list.setListValue(1);
         inputText.setText("button has been clicked");

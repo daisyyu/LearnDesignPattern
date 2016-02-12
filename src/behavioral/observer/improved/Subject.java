@@ -7,6 +7,9 @@ public interface Subject {
 
     void detachObserver(Observer observer);
 
+    /**
+     * notify
+     */
     void change();
 
 }
