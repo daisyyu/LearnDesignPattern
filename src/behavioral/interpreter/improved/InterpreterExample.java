@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class InterpreterExample {
     public static void main(String[] args) {
-        String expression = "w x z - +";
+        String expression = "w x z - + -";
         Evaluator sentence = new Evaluator(expression);
         Map<String,Expression> variables = new HashMap<String,Expression>();
         variables.put("w", new Number(5));
