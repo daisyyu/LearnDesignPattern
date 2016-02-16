@@ -1,10 +1,10 @@
 package behavioral.iterator.improved;
 
-public class CollectionIterator implements Iterator<String>{
+public class CollectionIterator implements Iterator<String> {
 
     private Collection collection;
 
-    private int cursor=0;
+    private int cursor = 0;
 
     public CollectionIterator(Collection collection) {
         this.collection = collection;
@@ -12,7 +12,7 @@ public class CollectionIterator implements Iterator<String>{
 
     @Override
     public String getNext() {
-        if(!isDone()){
+        if (!isDone()) {
             String item = collection.getItems()[cursor];
             cursor++;
             return item;

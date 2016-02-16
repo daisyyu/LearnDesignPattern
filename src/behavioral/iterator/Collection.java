@@ -1,12 +1,15 @@
 package behavioral.iterator;
 
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Collection {
 
-    private String [] items = new String[5];
+    private String[] items = new String[5];
 
 
-    public Collection(){
+    public Collection() {
         items[0] = "0";
         items[1] = "1";
         items[2] = "2";

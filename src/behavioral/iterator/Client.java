@@ -7,16 +7,13 @@ public class Client {
 
         Collection collection = new Collection();
 
-        String [] items = collection.getItems();
+        String[] items = collection.getItems();
 
-        for(int i= 0; i<items.length;i++){
+        for (int i = 0; i < items.length; i++) {
 
-            System.out.println("Items on the item list: "+items[i]);
+            System.out.println("Items on the item list: " + items[i]);
 
         }
-
-
-
 
 
     }
