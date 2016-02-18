@@ -4,8 +4,11 @@ package behavioral.templatemethod.improved;
 public abstract class LoanCalculationAlgorithm {
 
 
-    public int calculateLoan(){
-        return (int) (getBaseAmount()*getInterest()-caclulateDiscount());
+    public int calculateLoan() {
+        if (shouldImplementFoo()) {
+            foo();
+        }
+        return (int) (getBaseAmount() * getInterest() - caclulateDiscount());
     }
 
 
@@ -14,4 +17,11 @@ public abstract class LoanCalculationAlgorithm {
     abstract double getInterest();
 
     abstract int caclulateDiscount();
+
+    abstract void foo();
+
+    public boolean shouldImplementFoo() {
+        return true;
+    }
+
 }

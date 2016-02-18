@@ -18,4 +18,15 @@ public class ExpensiveLoanCalculation extends LoanCalculationAlgorithm {
     int caclulateDiscount() {
         return 100;
     }
+
+    @Override
+    void foo() {
+
+    }
+
+
+    @Override
+    public boolean shouldImplementFoo() {
+        return false;
+    }
 }
